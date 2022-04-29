@@ -8,6 +8,6 @@ vals = attendance['attendance']
 attendance['attendance'] = pd.to_numeric(vals.tolist(), errors ='ignore')
 attendance.plot(x='year', y='attendance', kind='bar')
 plt.xlabel('Year')
-plt.ylabel('Attendence')
+plt.ylabel('Attendance')
 plt.axhline(y = attendance['attendance'].mean(), color="green", linestyle="dashed", label="Mean")
 plt.show()
